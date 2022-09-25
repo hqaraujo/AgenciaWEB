@@ -1,12 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Promoções</title>
+  <title>Promocoes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
@@ -26,16 +26,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="./home.jsp">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="destino.html">Destino</a>
+                <a class="nav-link" href="./destino.jsp">Destino</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="promoções.html">Promoções</a>
+                <a class="nav-link" href="./promocoes.jsp">Promocoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="contatos.html">Contatos</a>
+                <a class="nav-link " href="./contatos.jsp">Contatos</a>
               </li>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -44,7 +44,7 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                    
-                    <li><a class="dropdown-item" href="cadastro.html">Cadastre-se</a></li>
+                    <li><a class="dropdown-item" href="./cadastro.jsp">Cadastre-se</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
@@ -57,7 +57,6 @@
           </div>
         </div>
       </nav>
-
 
 <br><br><br><br><br>
   <!--inicio card nacionais-->
@@ -76,7 +75,7 @@
             class="card-img-top" alt="...">
           <div class="card-body ">
             <h5 class="card-title">Rio de Janeiro</h5>
-            <p class="card-text">Ida e Volta <br>Hotel + Café da manhã <br> 6 dias e 5 noites<br> de <s>R$
+            <p class="card-text">Ida e Volta <br>Hotel + Café da manhã <br> 6 dias e 5 noites<br> de <s> R$
                 2000,00</s><br>Por<strong> R$ 1000,00</strong></p>
             <a href="#" class="btn btn-primary">Saiba mais</a>
           </div>

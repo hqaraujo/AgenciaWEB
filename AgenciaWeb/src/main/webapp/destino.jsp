@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +14,7 @@
 <body>
 
 <body style="background-color: #bbe4e9;">
-      <nav class="navbar navbar-expand-lg navbar-light position-fixed col-12 "
+       <nav class="navbar navbar-expand-lg navbar-light position-fixed col-12 "
         style="z-index:999; background-color:#00bbf0">
         <br><br><br>
         <div class="container-fluid col-11 m-auto">
@@ -26,16 +26,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="./home.jsp">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="destino.html">Destino</a>
+                <a class="nav-link" href="./destino.jsp">Destino</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="promoções.html">Promoções</a>
+                <a class="nav-link" href="./promocoes.jsp">Promocoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="contatos.html">Contatos</a>
+                <a class="nav-link " href="./contatos.jsp">Contatos</a>
               </li>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -44,7 +44,7 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                    
-                    <li><a class="dropdown-item" href="cadastro.html">Cadastre-se</a></li>
+                    <li><a class="dropdown-item" href="./cadastro.jsp">Cadastre-se</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
@@ -57,7 +57,6 @@
           </div>
         </div>
       </nav>
-
 
 <br><br><br><br><br>
   

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,16 +26,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="./home.jsp">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="destino.html">Destino</a>
+                <a class="nav-link" href="./destino.jsp">Destino</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="promoções.html">Promoções</a>
+                <a class="nav-link" href="./promocoes.jsp">Promocoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="contatos.html">Contatos</a>
+                <a class="nav-link " href="./contatos.jsp">Contatos</a>
               </li>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -44,7 +44,7 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                    
-                    <li><a class="dropdown-item" href="cadastro.html">Cadastre-se</a></li>
+                    <li><a class="dropdown-item" href="./cadastro.jsp">Cadastre-se</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
