@@ -1,10 +1,11 @@
+<%@page import="Model.ModelDestino"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" import="Model.ModelLogin" import="DAO.DAOLogin"
 	import="java.util.List"%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
 @SuppressWarnings("unchecked")
-List<ModelLogin> lista = (List<ModelLogin>) request.getAttribute("login");
+List<ModelDestino> lista = (List<ModelDestino>) request.getAttribute("destino");
 %>
 
 
@@ -55,7 +56,7 @@ List<ModelLogin> lista = (List<ModelLogin>) request.getAttribute("login");
 							Login </a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-							<li><a class="dropdown-item" href="./Views/login/index.jsp">login</a></li>
+							<li><a class="dropdown-item" href="./Views/destino/index.jsp">Destino</a></li>
 							<li>
 								<hr class="dropdown-divider">
 							</li>
@@ -67,20 +68,21 @@ List<ModelLogin> lista = (List<ModelLogin>) request.getAttribute("login");
 			</div>
 		</div>
 	</nav>
-	<br><br><br><br><br>
 	<header class="tag">
-		<h1 class="container">Login</h1>
+		<h1 class="container">Destino</h1>
 	</header>
 
 	<div class="container py-3">
-		<a href="./Views/login/create.html" class="btn btn-primary mb-2">
-			Criar Login </a>
+		<a href="./Views/destino/create.html" class="btn btn-primary mb-2">
+			Criar Destino </a>
 		<div class="table-responsive">
 			<table class="table">
 				<thead>
 					<tr>
-						<th>Id Login</th>
-						<th>Tipo Login</th>
+						<th>Id destino</th>
+						<th>Pais</th>
+						<th>Cidadde</th>
+						<th>Pacotes Prompcionais</th>
 
 					</tr>
 				</thead>
@@ -90,12 +92,14 @@ List<ModelLogin> lista = (List<ModelLogin>) request.getAttribute("login");
 					for (ModelLogin c : lista) {
 					%>
 					<tr>
-						<td><%=c.getId_login()%></td>
-						<td><%=c.getTipo_login()%></td>
+						<td><%=c.getId_destino()%></td>
+						<td><%=c.getPais()%></td>
+						<td><%=c.getCidade()%></td>
+						<td><%=c.getPacotes()%></td>
 
 						<td class="d-flex"><a
-							href="./login-edit?id=<%=c.getId_login()%>" class="btn btn-info">
-								Editar </a> <a href="./login-delet?id=<%=c.getId_login()%>"
+							href="/destino-edit?id=<%=c.getId_destino()%>" class="btn btn-info">
+								Editar </a> <a href="/destino-delet?id=<%=c.getId_destino()%>"
 							class="btn btn-danger" style="margin-left: 10px;"> Deletar </a></td>
 					</tr>
 					<%

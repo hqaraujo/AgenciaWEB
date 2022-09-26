@@ -14,7 +14,7 @@ public class DAOPacotes {
 	PreparedStatement pstm = null;
 
 	public void save(ModelPacotes pacote) {
-		String sql = "INSERT INTO pacotesviagem (origem, promocao) values (?, ?)";
+		String sql = "INSERT INTO pacotespromocionais (origem, promocao) values (?, ?)";
 
 		try {
 			// Cria uma conexao com o banco
@@ -45,7 +45,7 @@ public class DAOPacotes {
 	}
 
 	// Metodo para Ler
-	public List<ModelPacotes> getPacotes() {
+	public  List<ModelPacotes> getPacotespromocionais() {
 		String sql = "select * from pacotes;";
 
 		List<ModelPacotes> listaPacotes = new ArrayList<ModelPacotes>();
@@ -90,7 +90,7 @@ public class DAOPacotes {
 
 	// UPDATE
 	public void update(ModelPacotes pacote) {
-		String sql = "UPDATE pacotesviagem SET origem= ?, promocao = ?  WHERE id_pacote = ?";
+		String sql = "UPDATE pacotespromocionais SET origem= ?, promocao = ?  WHERE id_pacote = ?";
 
 		try {
 			conn = ConnectionMySQL.createConnectionMySQL();
@@ -120,7 +120,7 @@ public class DAOPacotes {
 
 	// DELETE
 	public void deleteById(int id) {
-		String sql = "DELETE FROM pacotes WHERE id_pacote = ?";
+		String sql = "DELETE FROM pacotespromocionais WHERE id_pacote = ?";
 
 		try {
 			conn = ConnectionMySQL.createConnectionMySQL();
@@ -147,7 +147,7 @@ public class DAOPacotes {
 
 	// BUSCAR POR ID
 	public ModelPacotes getPacotesById(int id) {
-		String sql = "select * from pacotes WHERE id_pacote = ?";
+		String sql = "select * from pacotespromocionais WHERE id_pacote = ?";
 
 		ModelPacotes pacote = new ModelPacotes();
 		ResultSet rset = null;

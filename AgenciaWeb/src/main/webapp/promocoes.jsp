@@ -14,7 +14,7 @@
 <body>
 
  <body style="background-color: #bbe4e9;">
-      <nav class="navbar navbar-expand-lg navbar-light position-fixed col-12 "
+       <nav class="navbar navbar-expand-lg navbar-light position-fixed col-12 "
         style="z-index:999; background-color:#00bbf0">
         <br><br><br>
         <div class="container-fluid col-11 m-auto">
@@ -45,6 +45,7 @@
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                    
                     <li><a class="dropdown-item" href="./cadastro.jsp">Cadastre-se</a></li>
+                    <li><a class="dropdown-item" href="./adm.html">Administrador</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
@@ -57,6 +58,7 @@
           </div>
         </div>
       </nav>
+
 
 <br><br><br><br><br>
   <!--inicio card nacionais-->

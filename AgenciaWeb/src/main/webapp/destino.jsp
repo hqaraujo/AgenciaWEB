@@ -45,6 +45,7 @@
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                    
                     <li><a class="dropdown-item" href="./cadastro.jsp">Cadastre-se</a></li>
+                    <li><a class="dropdown-item" href="./adm.html">Administrador</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
@@ -57,6 +58,7 @@
           </div>
         </div>
       </nav>
+
 
 <br><br><br><br><br>
   

@@ -1,10 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8" import="Model.ModelLogin" import="DAO.DAOLogin"
-	import="java.util.List"%>
 
-<%
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8" import="Model.ModelPacotes" import="DAO.DAOPacotes"
+	import="java.util.List"%>
+<% 
 @SuppressWarnings("unchecked")
-List<ModelLogin> lista = (List<ModelLogin>) request.getAttribute("login");
+List<ModelPacotes> lista = (List<ModelPacotes>) request.getAttribute("pacotes");
 %>
 
 
@@ -52,10 +52,10 @@ List<ModelLogin> lista = (List<ModelLogin>) request.getAttribute("login");
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 						role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Login </a>
+							Pacotes </a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-							<li><a class="dropdown-item" href="./Views/login/index.jsp">login</a></li>
+							<li><a class="dropdown-item" href="./Views/pacotes/index.jsp">Pacotes Promocionais</a></li>
 							<li>
 								<hr class="dropdown-divider">
 							</li>
@@ -67,35 +67,38 @@ List<ModelLogin> lista = (List<ModelLogin>) request.getAttribute("login");
 			</div>
 		</div>
 	</nav>
+	
 	<br><br><br><br><br>
 	<header class="tag">
-		<h1 class="container">Login</h1>
+		<h1 class="container">Pacotes Promocionais</h1>
 	</header>
 
 	<div class="container py-3">
-		<a href="./Views/login/create.html" class="btn btn-primary mb-2">
-			Criar Login </a>
+		<a href="./Views/pacotes/create.html" class="btn btn-primary mb-2">
+			Criar Pacote </a>
 		<div class="table-responsive">
 			<table class="table">
 				<thead>
 					<tr>
-						<th>Id Login</th>
-						<th>Tipo Login</th>
+						<th>Id Pacote</th>
+						<th>Origem</th>
+						<th>Promocao</th>
 
 					</tr>
 				</thead>
 				<tbody>
 
 					<%
-					for (ModelLogin c : lista) {
+					for (ModelPacotes c : lista) {
 					%>
 					<tr>
-						<td><%=c.getId_login()%></td>
-						<td><%=c.getTipo_login()%></td>
+						<td><%=c.getId_pacote()%></td>
+						<td><%=c.getOrigem()%></td>
+						<td><%=c.getPromocao()%></td>
 
 						<td class="d-flex"><a
-							href="./login-edit?id=<%=c.getId_login()%>" class="btn btn-info">
-								Editar </a> <a href="./login-delet?id=<%=c.getId_login()%>"
+							href="../pacotes-edit?id=<%=c.getId_pacote()%>" class="btn btn-info">
+								Editar </a> <a href="../pacotes-delet?id=<%=c.getId_pacote()%>"
 							class="btn btn-danger" style="margin-left: 10px;"> Deletar </a></td>
 					</tr>
 					<%

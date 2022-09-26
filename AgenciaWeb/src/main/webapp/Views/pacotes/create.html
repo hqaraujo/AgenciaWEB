@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-<title>Login | Cadastro Pacotes Promocionais</title>
+<title>Pacotes | Cadastro Pacotes Promocionais</title>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
@@ -20,9 +20,7 @@
 	<nav
 		class="navbar navbar-expand-lg navbar-light position-fixed col-12 "
 		style="z-index: 999; background-color: #00bbf0">
-		<br>
-		<br>
-		<br>
+		<br> <br> <br>
 		<div class="container-fluid col-11 m-auto">
 			<a class="navbar-brand" href="#">Bon Voyage</a>
 			<button class="navbar-toggler" type="button"
@@ -46,10 +44,11 @@
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 						role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Login </a>
+							Pacotes Promocionais </a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-							<li><a class="dropdown-item" href="./Views/login/index.jsp">Login</a></li>
+							<li><a class="dropdown-item"
+								href="./Views/pacotes/index.jsp">Pacotes Promocionais</a></li>
 							<li>
 								<hr class="dropdown-divider">
 							</li>
@@ -61,37 +60,29 @@
 			</div>
 		</div>
 	</nav>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+
 	<header class="tag">
-		<h1 class="container">Cadastrar Login</h1>
+		<h1 class="container">Cadastrar Pacote Promocional</h1>
 	</header>
 	<br>
 	<br>
 	<br>
 	<div class="container py-3">
-		<form action="../../login-create">
-			<fieldset>
-				<legend>
-					<h2 class="text-center">Criar</h2>
-				</legend>
-				<div class="form-group mb-3">
-					<label for="login" class="form-label"> </label> <input type="text"
-						id="login" name="login" class="form-control" placeholder="login"
-						value="" />
-				</div>
-				<div class="form-group mb-3">
-					<label for="tipo_login" class="form-label"> Tipo de Login </label>
 
+		<form action="../pacotes" method="get" class="form-control">
+			<legend>Dados do Contato</legend>
 
-					<button type="submit" class="btn btn-primary">Enviar</button>
-					<a href="../../login" class="btn btn-danger"
-						style="margin-left: 10px"> Cancelar </a>
-			</fieldset>
+			<label for="origem">Origem:</label> <input type="text" id="origem"
+				name="origem" size="40" class="form-control" required> <br>
+				
+			<label for="promocao">Promocao:</label> <input type="Promocao"
+				id="promocao" name="promocao" size="15" class="form-control"
+				required> <br> 
+			<button type="submit" class="btn btn-primary">Enviar</button>
 		</form>
+
+
+
 	</div>
 
 
