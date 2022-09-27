@@ -2,12 +2,16 @@
 	contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"
 %>
+<%@ page language="java" 
+	contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"
+%>
 
 <!doctype html>
 <html lang="pt-br">
 
 <head>
-    <title>Atualizar Login</title>
+    <title>Atualizar Clientes</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -51,7 +55,7 @@
 							Login </a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-							<li><a class="dropdown-item" href="./Views/login/index.jsp">login</a></li>
+							<li><a class="dropdown-item" href="./Views/clientes/index.jsp">Clientes</a></li>
 							<li>
 								<hr class="dropdown-divider">
 							</li>
@@ -65,11 +69,11 @@
 	</nav>
 	<br><br><br><br><br>
         <header class="tag">
-            <h1 class="container">Atualizar Login</h1>
+            <h1 class="container">Atualizar Clientes</h1>
         </header>
 
         <div class="container py-3">
-            <form action="./login-update" >
+            <form action="./clientes-update" >
                 <fieldset>
                     <legend>Criar
                     </legend>
@@ -83,18 +87,44 @@
                     
                   
                     <div class="form-group mb-3">
-                        <label for="login" class="form-label">
-                            Tipo Login
+                        <label for="cpf_cliente" class="form-label">
+                            CPF
                         </label>
-                        <input type="text" id="tipo_login" name="tipo_login" class="form-control" placeholder="cidade" 
-                        value="<%=request.getAttribute("tipo_login") %>" />
+                        <input type="text" id="cpf_cliente" name="cpf_cliente" class="form-control"  
+                        value="<%=request.getAttribute("cpf_cliente") %>" />
                     </div>
+                    
+                    <div class="form-group mb-3">
+                        <label for="nome_cliente" class="form-label">
+                            Nome
+                        </label>
+                        <input type="text" id="nome_cliente" name="nome_cliente" class="form-control"  
+                        value="<%=request.getAttribute("nome_cliente") %>" />
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                        <label for="email_cliente" class="form-label">
+                            Email
+                        </label>
+                        <input type="text" id="email_cliente" name="email_cliente" class="form-control" 
+                        value="<%=request.getAttribute("email_cliente") %>" />
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                        <label for="login" class="form-label">
+                            Login
+                        </label>
+                        <input type="text" id="login" name="login" class="form-control" 
+                        value="<%=request.getAttribute("login") %>" />
+                    </div>
+                    
+                   
                     
 
                     <button type="submit" class="btn btn-primary">
                         Enviar
                     </button>
-                    <a href="./login" class="btn btn-danger" style="margin-left: 10px">
+                    <a href="./clientes" class="btn btn-danger" style="margin-left: 10px">
                         Cancelar
                     </a>
                 </fieldset>
