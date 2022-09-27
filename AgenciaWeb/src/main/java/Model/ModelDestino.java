@@ -49,6 +49,12 @@ public class ModelDestino {
 	public void setPacotes(ModelPacotes pacotes) {
 		this.pacotes = pacotes;
 	}
+
+
+	public void setPacotes(String parameter) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 	

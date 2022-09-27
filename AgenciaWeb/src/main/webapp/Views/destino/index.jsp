@@ -1,6 +1,6 @@
 <%@page import="Model.ModelDestino"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8" import="Model.ModelLogin" import="DAO.DAOLogin"
+	pageEncoding="UTF-8" import="Model.ModelLogin" import="DAO.DAODestino"
 	import="java.util.List"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
@@ -68,6 +68,7 @@ List<ModelDestino> lista = (List<ModelDestino>) request.getAttribute("destino");
 			</div>
 		</div>
 	</nav>
+	<br><br><br><br>
 	<header class="tag">
 		<h1 class="container">Destino</h1>
 	</header>
@@ -81,7 +82,7 @@ List<ModelDestino> lista = (List<ModelDestino>) request.getAttribute("destino");
 					<tr>
 						<th>Id destino</th>
 						<th>Pais</th>
-						<th>Cidadde</th>
+						<th>Cidade</th>
 						<th>Pacotes Prompcionais</th>
 
 					</tr>
@@ -89,7 +90,7 @@ List<ModelDestino> lista = (List<ModelDestino>) request.getAttribute("destino");
 				<tbody>
 
 					<%
-					for (ModelLogin c : lista) {
+					for (ModelDestino c : lista) {
 					%>
 					<tr>
 						<td><%=c.getId_destino()%></td>
